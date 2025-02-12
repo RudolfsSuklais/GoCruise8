@@ -118,8 +118,8 @@ const loginUser = async (req, res) => {
                 }
                 res.cookie("token", token, {
                     httpOnly: true,
-                    SameSite: "None", // Allows cross-site cookies
-                    secure: process.env.NODE_ENV === "production", // Only send cookies over HTTPS in production
+                    sameSite: "None", // Ensure cross-origin requests work
+                    secure: true, // Always true for HTTPS
                 });
             }
         );

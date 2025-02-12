@@ -28,7 +28,13 @@ function Profile() {
 
     const fetchProfile = async () => {
         try {
-            const { data } = await axios.get("/profile");
+            const { data } = await axios.get(
+                "https://gocruise.onrender.com/profile",
+                {
+                    withCredentials: true,
+                }
+            );
+
             setIsLoading(false);
             setUser({
                 ...data,
@@ -93,7 +99,12 @@ function Profile() {
         }
 
         try {
-            await axios.put(`/users/${user.userID}`, user);
+            await axios.put(
+                `https://gocruise.onrender.com/users/${user.userID}`,
+                user,
+                { withCredentials: true }
+            );
+
             fetchProfile();
             setIsEditDisabled(true);
             window.location.reload();
