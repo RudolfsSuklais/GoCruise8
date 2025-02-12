@@ -15,7 +15,7 @@ const PORT = process.env.REACT_APP_PORT;
 app.use(
     cors({
         credentials: true,
-        origin: `http://localhost:${PORT}`,
+        origin: "https://go-cruise8-4srbgrq4r-rudolfs-projects-a463d814.vercel.app",
     })
 );
 
