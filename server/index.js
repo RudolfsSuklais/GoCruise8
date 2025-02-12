@@ -16,7 +16,6 @@ app.use(
     cors({
         credentials: true,
         origin: [
-            "http://localhost:5173", // For local development
             "https://go-cruise8-4srbgrq4r-rudolfs-projects-a463d814.vercel.app", // Vercel frontend URL
         ],
     })
