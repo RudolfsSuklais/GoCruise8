@@ -1,0 +1,251 @@
+.car-list-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(9, 29, 116, 0.6);
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: "Arial", sans-serif;
+    gap: 40px;
+}
+
+.car-list-card:hover {
+    transform: translateY(-10px);
+}
+
+.car-list-card i:hover {
+    transform: translateY(-2px);
+}
+
+.no-cars-available-notification {
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.car-list {
+    background: #fff;
+    padding-bottom: 30px;
+    min-height: 80vh;
+}
+
+.car-list h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+}
+
+.car-list-card h2 {
+    color: black;
+}
+
+.car-list h1 {
+    color: #eee;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.car-list-card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #495057;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.car-list-card img {
+    height: 120px;
+}
+
+.car-list-card-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.car-list-card-button {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.car-list-card-button button {
+    background-color: #1b4fa2;
+    color: #fff;
+    border: 1px solid #1b4fa2;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.car-list-card-button button:hover {
+    background-color: #fff;
+    color: #1b4fa2;
+    letter-spacing: 1px;
+}
+
+.car-list-card-button button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.car-list-card-button h3 {
+    text-align: end;
+    margin-right: 25px;
+    font-size: 35px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: auto;
+    max-width: 800px;
+    font-family: "Arial", sans-serif;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(3, 3, 3, 0.6);
+}
+
+.filters input[type="text"] {
+    width: 40%;
+    background-color: white;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    color: #333;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.filters input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.filters select {
+    width: 30%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filters-sort-by-price select {
+    width: 150px;
+}
+
+.view-deal-btn {
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.filters select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.filters label {
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+.car-prices-hovered h4 {
+    font-weight: 400;
+}
+
+.car-list-dropdown-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 830px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    height: 80px;
+}
+
+.car-list-dropdown {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.car-list-dropdown-date-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.car-list-dropdown-date-input input {
+    background-color: white;
+    color: #333;
+}
+
+.cars-available-notification {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.error-message {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.cars-available {
+    text-align: center;
+}
+
+.car-list-card-image-overlay {
+    position: absolute;
+    top: -120px;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(20, 57, 126, 0.9);
+}
+
+.car-list-card-image {
+    position: relative;
+}
+
+.car-list-card-image i {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    color: #0d4695;
+}
+
+.car-list-card-image img {
+    width: 200px;
+    max-height: 200px;
+    object-fit: scale-down;
+}

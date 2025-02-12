@@ -1,0 +1,6 @@
+.add-car-page {
+    background: linear-gradient(to bottom, transparent -10%, #1b4fa2 100%),
+        linear-gradient(to top, transparent -100%, #1b4fa2 100%);
+    max-height: 46.2vh;
+    padding: 10px 0 200px 0;
+}

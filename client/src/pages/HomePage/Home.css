@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+}
+
+.home-page {
+    background-image: url("../../images/HomeBackgroundImage.webp");
+    height: 135vh;
+    margin: 0;
+    position: relative;
+    padding: 40px 120px 60px 80px;
+}
+
+.home-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent -10%, #1b4fa2 100%),
+        linear-gradient(to top, transparent -100%, #1b4fa2 100%);
+
+    z-index: 1;
+}
+
+.input-group {
+    width: 250px;
+}
+
+.input-group input {
+    cursor: pointer;
+}
+
+.welcome-message {
+    font-size: 45px;
+    position: relative;
+    z-index: 10;
+    color: #ecc00c;
+    font-style: italic;
+}
+
+.home-page-hero-section h1 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 40px;
+}
+
+.home-page h3 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-weight: 500;
+}
+
+.home-page-h3-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.home-page-dropdown {
+    display: flex;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    border: 6px solid #ecc00c;
+    position: relative;
+    z-index: 2;
+    min-height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+
+.search-btn-notification-wrapper button {
+    background-color: #205dc0;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.search-btn-notification-wrapper button:hover {
+    background-color: #fff;
+}
+
+.search-btn-notification-wrapper button:disabled {
+    background-color: #fff;
+    color: #1b4fa2;
+    cursor: not-allowed;
+    padding: 10px 20px;
+}
+
+.home-page-dropdown-date-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-page-dropdown-date-input label {
+    color: #333;
+    font-weight: 400;
+}
+
+.home-page-dropdown-date-input input {
+    background-color: white;
+    color: #333;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.home-page-dropdown-btn {
+    background-color: #205dc0;
+    color: #fff;
+    border: 2px solid #205dc0;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+}
+
+.home-page-dropdown-btn:hover {
+    background-color: #fff;
+    color: #205dc0;
+}
+
+.home-page-dropdown-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-btn-notification-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-page-information {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.key-features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    border: 5px solid #ecc00c;
+}
+
+.key-features p {
+    color: #333;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.customer-testimonials {
+    display: flex;
+    gap: 20px;
+    color: #333;
+    justify-content: space-between;
+}
+.customer-testimonials p {
+    font-style: italic;
+    text-align: center;
+}
+
+.customer-testimonials h3 {
+    color: #333;
+}
+
+.testimonial-1,
+.testimonial-2 {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    border: 5px solid #ecc00c;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    width: 300px;
+}
+
+.customer-image {
+    border: 100px;
+}
+
+.customer-image img {
+    height: 100px;
+    border-radius: 100px;
+    border: 3px solid #ecc00c;
+}
+
+.prices-start-from {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #ecc00c;
+    color: #333;
+    padding: 10px 0;
+    font-weight: 700;
+    width: 50%;
+    border-top-left-radius: 12px;
+}
+
+.prices-start-from h1 {
+    color: black;
+    font-style: italic;
+    font-size: 45px;
+}
+
+.prices-start-from-2 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background-color: #ecc00c;
+    color: #333;
+    padding: 10px 0;
+    font-weight: 700;
+    width: 50%;
+    margin-left: 612px;
+    font-style: italic;
+    border-bottom-right-radius: 12px;
+}
+
+.prices-start-from-2 h1 {
+    color: #fff;
+    font-style: italic;
+    font-size: 45px;
+}
+
+.prices-start-from-2 span {
+    color: black;
+}
+
+.home-page h1 {
+    color: "#ecc00c";
+}

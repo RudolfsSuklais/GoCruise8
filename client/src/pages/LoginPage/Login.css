@@ -1,0 +1,45 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    min-height: 80vh;
+}
+
+.login-page-submit-btn-wrapper {
+    text-align: center;
+}
+
+.login-page-submit-btn-wrapper button {
+    background-color: #fff;
+    color: #205dc0;
+    border: 2px solid #205dc0;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.login-page-submit-btn-wrapper button:hover {
+    background-color: #205dc0;
+    color: #fff;
+}
+
+.login-page form {
+    background-color: #fff;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(18, 44, 161, 0.8);
+    padding: 20px;
+}
+
+.login-page h1 {
+    font-weight: 600;
+    color: #333;
+}

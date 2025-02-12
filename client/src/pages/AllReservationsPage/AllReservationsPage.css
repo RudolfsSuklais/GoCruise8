@@ -1,0 +1,22 @@
+.all-reservations-page .delete-button {
+    background-color: red;
+    border-radius: 8px;
+    color: #fff;
+    border: 2px solid red;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.all-reservations-page .delete-button:hover {
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+}
+
+.no-reservations-notification {
+    height: 69vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}

@@ -1,0 +1,86 @@
+.footer-container {
+    height: 100px;
+    display: flex;
+    background-color: #1b4fa2;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px 20px 30px;
+}
+
+.footer-logo a {
+    font-family: "Quicksand", sans-serif;
+    font-size: 28px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo-link-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.copyright p {
+    color: #fff;
+}
+
+.footer-information {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+}
+
+.footer-subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-subscribe p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-subscribe input {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid transparent;
+    height: 14px;
+    border-radius: 6px 0 0 6px;
+}
+
+.footer-subscribe input:focus {
+    outline: none;
+    border: 2px solid #e0af1a;
+}
+
+.subscribe-input-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-input-btn button {
+    font-size: 17px;
+    padding: 6.3px 12px;
+    border-radius: 0 6px 6px 0;
+    background-color: #fff;
+    color: #0056b3;
+    border: 2px solid #fff;
+    border-left: 1px solid #0056b3;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.subscribe-input-btn button:hover {
+    background-color: #0056b3;
+    border: 2px solid #fff;
+    color: #fff;
+}

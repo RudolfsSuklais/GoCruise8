@@ -1,0 +1,136 @@
+.add-car-container {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: "Arial", sans-serif;
+}
+
+.add-car-container h2 {
+    font-size: 2rem;
+    color: #eee;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.add-car-form-input-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.add-car-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+    min-width: 250px;
+}
+
+input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input::placeholder {
+    color: #9a9a9a;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.add-car-container button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+.add-car-container select {
+    padding: 0.75rem 1rem;
+    border: 2px solid #003d80;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.add-car-container select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.add-car-container select option {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .add-car-form-input-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add-car-form-wrapper-1,
+    .add-car-form-wrapper-2,
+    .add-car-form-wrapper-3 {
+        min-width: 100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .add-car-container {
+        background-color: transparent;
+        color: #f8f9fa;
+    }
+
+    .add-car-container input {
+        border: 2px solid #003d80;
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .add-car-container input:focus {
+        border-color: #66bfff;
+        box-shadow: 0 0 5px rgba(102, 191, 255, 0.5);
+    }
+
+    .add-car-container input::placeholder {
+        color: #cbcbcb;
+    }
+
+    .add-car-container button {
+        background-color: transparent;
+        border: 2px solid #fff;
+        transition: 0.3s;
+    }
+
+    .add-car-container button:hover {
+        background-color: #fff;
+        color: #003d80;
+        letter-spacing: 1px;
+    }
+}

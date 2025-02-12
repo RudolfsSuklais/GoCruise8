@@ -1,0 +1,110 @@
+.all-cars-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.all-cars-card-container {
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.all-cars-card-container:hover {
+    transform: translateY(-5px);
+}
+
+.all-cars-card-container img {
+    object-fit: scale-down;
+    max-width: 250px;
+}
+
+.all-cars-card-container button {
+    font-size: 20px;
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.1s;
+}
+
+.all-cars-card-container button:hover {
+    background-color: red;
+    color: #eee;
+    border: 1px solid red;
+}
+
+.all-cars-card-see-more-btn button {
+    font-size: 14px;
+}
+
+.all-cars-card-image-container {
+    height: 200px;
+}
+
+.all-cars-card-btn-container {
+    display: flex;
+    gap: 10px;
+}
+
+.all-car-card-see-more-btn-container button {
+    background-color: transparent;
+    color: #1c4c9a;
+    border-color: #1c4c9a;
+}
+
+.all-car-card-see-more-btn-container button:hover {
+    background-color: #1c4c9a;
+    color: #eee;
+    border-color: #1c4c9a;
+}
+
+.car-id {
+    font-style: italic;
+}
+
+.search-sort-container input {
+    border: 1px solid #aaa;
+    font-size: 15px;
+}
+
+.search-sort-container label {
+    font-size: 20px;
+}
+
+.all-cars {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.cars-available {
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.sort-container {
+    margin-top: 20px;
+}
+
+.sort-container select {
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+    border: 2px solid #1c4c9a;
+}
+
+.sort-container select:focus {
+    border: 2px solid #1c4c9a;
+}

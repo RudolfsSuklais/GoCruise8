@@ -1,0 +1,86 @@
+.form-column-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    height: 100vh;
+}
+
+.register-page {
+    padding: 40px;
+}
+
+.register-page h1 {
+    font-weight: 600;
+    color: #333;
+}
+
+.register-page form {
+    background-color: #fff;
+
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    height: 650px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(18, 44, 161, 0.8);
+    padding: 20px;
+}
+
+.form-column-1,
+.form-column-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-page-submit-btn-wrapper button {
+    background-color: transparent;
+    color: #1b4fa2;
+    border: 2px solid #205dc0;
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    padding: 7px 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.register-page input {
+    border: 1px solid #333;
+    margin: 5px;
+    width: 300px;
+}
+
+.register-page-submit-btn-wrapper button:hover {
+    background-color: #205dc0;
+    color: #fff;
+    border: 2px solid #205dc0;
+}
+
+.register-page-submit-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.show-password {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    gap: 5px;
+}
+
+.show-password input {
+    width: 20px;
+    background-color: none;
+    height: 19px;
+}
+
+.register-page span,
+.login-page span {
+    color: red;
+}

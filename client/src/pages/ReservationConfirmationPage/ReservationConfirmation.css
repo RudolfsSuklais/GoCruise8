@@ -1,0 +1,54 @@
+.reservation-confirmation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    background: linear-gradient(to top, transparent -90%, #1b4fa2 100%);
+    padding-bottom: 80px;
+
+    padding-top: 40px;
+    color: #fff;
+}
+
+.reservation-confirmation-container h1 {
+    color: #eee;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.reservation-confirmation-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.back-to-home {
+    background-color: transparent;
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+.back-to-home:hover {
+    background-color: transparent;
+    border: 2px solid #1b4fa2;
+    color: #1b4fa2;
+}
+
+.reservation-confirmation-card img {
+    width: 400px;
+}

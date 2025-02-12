@@ -1,0 +1,30 @@
+.all-users-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.all-users-page h1 {
+    text-align: center;
+    color: #1c4c9a;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.all-users-page .delete-button {
+    background-color: red;
+    border-radius: 8px;
+    color: #fff;
+    border: 2px solid red;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.all-users-page .delete-button:hover {
+    background-color: transparent;
+    color: red;
+}

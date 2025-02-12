@@ -1,0 +1,160 @@
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f5f5;
+    padding: 40px 20px;
+}
+
+.profile-page h1 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.edit-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-button-container button {
+    color: white;
+    background-color: transparent;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-page .edit-button:hover {
+    transform: scale(1.1);
+}
+
+.profile-page .edit-button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}
+
+.profile-page .profile-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 900px;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+
+.profile-page label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+    margin-left: 5px;
+}
+
+.profile-page input {
+    font-size: 16px;
+    padding: 12px 15px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #333;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.profile-page input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.profile-page input:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+.profile-page button[type="submit"] {
+    background-color: #0056b3;
+    color: white;
+    padding: 7px 18px;
+    border-radius: 8px;
+    border: 2px solid #0056b3;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-page button[type="submit"]:hover {
+    background-color: transparent;
+    color: #0056b3;
+}
+
+.profile-page button[type="submit"].disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.profile-page .fa-regular {
+    font-size: 25px;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.profile-page .fa-regular:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .profile-page .profile-card {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .profile-page input {
+        font-size: 14px;
+    }
+}
+
+.disabled {
+    display: none;
+}
+
+.edit-cancel-button {
+    background-color: red;
+    color: white;
+    padding: 7px 18px;
+    border-radius: 8px;
+    border: 2px solid red;
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.edit-cancel-button:hover {
+    background-color: transparent;
+    color: red;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.edit-text {
+    margin-left: 8px;
+    color: #333;
+}
