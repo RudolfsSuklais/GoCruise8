@@ -15,10 +15,14 @@ const User = require("../models/user");
 
 const PORT = process.env.REACT_APP_PORT;
 
-router.use(
+app.use(
     cors({
         credentials: true,
-        origin: `https://go-cruise8-4srbgrq4r-rudolfs-projects-a463d814.vercel.app`,
+        origin: [
+            "http://localhost:5173", // For local development
+            "https://go-cruise8-4srbgrq4r-rudolfs-projects-a463d814.vercel.app", // First Vercel frontend URL
+            "https://go-cruise8-c5i4qp9f7-rudolfs-projects-a463d814.vercel.app", // Second Vercel frontend URL
+        ],
     })
 );
 
