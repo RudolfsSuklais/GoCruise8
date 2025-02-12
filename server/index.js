@@ -20,6 +20,7 @@ app.use(
             "https://go-cruise8-c5i4qp9f7-rudolfs-projects-a463d814.vercel.app",
             "https://go-cruise8-4srbgrq4r-rudolfs-projects-a463d814.vercel.app",
             "https://go-cruise8-r01q15xiy-rudolfs-projects-a463d814.vercel.app",
+            "https://go-cruise8-37xdc7arx-rudolfs-projects-a463d814.vercel.app",
         ],
     })
 );
