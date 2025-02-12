@@ -19,9 +19,11 @@ export default function Login() {
     const loginUser = async (e) => {
         e.preventDefault();
         try {
-            const { data: response } = await axios.post("/login", data, {
-                withCredentials: true,
-            });
+            const { data } = await axios.get(
+                "https://gocruise.onrender.com/profile",
+                { withCredentials: true }
+            );
+
             if (response.error) {
                 toast.error(response.error);
             } else {

@@ -11,7 +11,11 @@ export function UserContextProvider({ children }) {
     useEffect(() => {
         const fetchUserProfile = async () => {
             try {
-                const { data } = await axios.get("/profile");
+                const { data } = await axios.get(
+                    "https://gocruise.onrender.com/profile",
+                    { withCredentials: true }
+                );
+
                 setUser(data);
             } catch (error) {
                 console.log("Error fetching user profile: ", error);
