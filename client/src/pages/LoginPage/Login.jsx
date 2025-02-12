@@ -19,8 +19,9 @@ export default function Login() {
     const loginUser = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.get(
-                "https://gocruise.onrender.com/profile",
+            const { data: response } = await axios.post(
+                "https://gocruise.onrender.com/login",
+                data,
                 { withCredentials: true }
             );
 
@@ -28,7 +29,13 @@ export default function Login() {
                 toast.error(response.error);
             } else {
                 setData({});
-                const profileResponse = await axios.get("/profile");
+                const profileResponse = await axios.get(
+                    "https://gocruise.onrender.com/profile",
+                    {
+                        withCredentials: true,
+                    }
+                );
+
                 setUser(profileResponse.data);
 
                 const redirectedFromRent =
