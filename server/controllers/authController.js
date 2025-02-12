@@ -116,7 +116,11 @@ const loginUser = async (req, res) => {
                         .status(errorStatusCode.SERVER_ERROR)
                         .json({ error: errorMessages.WENT_WRONG });
                 }
-                res.cookie("token", token, { httpOnly: true }).json(user);
+                res.cookie("token", token, {
+                    httpOnly: true,
+                    SameSite: "None", // Allows cross-site cookies
+                    secure: process.env.NODE_ENV === "production", // Only send cookies over HTTPS in production
+                });
             }
         );
     } catch (error) {
