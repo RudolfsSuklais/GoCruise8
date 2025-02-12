@@ -15,7 +15,7 @@ const User = require("../models/user");
 
 const PORT = process.env.REACT_APP_PORT;
 
-app.use(
+router.use(
     cors({
         credentials: true,
         origin: [
